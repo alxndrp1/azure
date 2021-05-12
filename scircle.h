@@ -15,6 +15,9 @@ public:
     scircle(QWidget *parent = nullptr);
     ~scircle();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::scircle *ui;
 };
