@@ -7,13 +7,14 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class scircle; }
 QT_END_NAMESPACE
 
-class scircle : public QWidget
+class Scircle : public QWidget
 {
     Q_OBJECT
 
 public:
-    scircle(QWidget *parent = nullptr);
-    ~scircle();
+    Scircle(QWidget *parent = nullptr);
+    ~Scircle();
+    const double get_scircle(double r);
 
 private slots:
     void on_pushButton_clicked();

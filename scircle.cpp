@@ -2,24 +2,24 @@
 #include "ui_scircle.h"
 #include "math.h"
 
-double get_scircle(double r)
-{
-    return M_PI * r * r;
-}
-
-scircle::scircle(QWidget *parent)
+Scircle::Scircle(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::scircle)
 {
     ui->setupUi(this);
 }
 
-scircle::~scircle()
+Scircle::~Scircle()
 {
     delete ui;
 }
 
-void scircle::on_pushButton_clicked()
+const double Scircle::get_scircle(double r)
+{
+    return M_PI * r * r;
+}
+
+void Scircle::on_pushButton_clicked()
 {
     ui->label_3->setText(QString::number(get_scircle(ui->lineEdit->text().toDouble())));
 }
