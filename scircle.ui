@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>250</width>
+    <width>269</width>
     <height>150</height>
    </rect>
   </property>
@@ -17,6 +17,9 @@
   </property>
   <property name="windowTitle">
    <string>scircle</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(226, 254, 255);</string>
   </property>
   <layout class="QFormLayout" name="formLayout">
    <item row="0" column="0">

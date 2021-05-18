@@ -14,7 +14,7 @@ Scircle::~Scircle()
     delete ui;
 }
 
-const double Scircle::get_scircle(double r)
+double Scircle::get_scircle(double r)
 {
     return M_PI * r * r;
 }

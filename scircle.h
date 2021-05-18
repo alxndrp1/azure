@@ -14,7 +14,7 @@ class Scircle : public QWidget
 public:
     Scircle(QWidget *parent = nullptr);
     ~Scircle();
-    const double get_scircle(double r);
+    double get_scircle(double r);
 
 private slots:
     void on_pushButton_clicked();
